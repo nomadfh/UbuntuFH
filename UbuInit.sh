@@ -19,6 +19,9 @@ sudo apt remove libreoffice*
 sudo cp -r /usr/share/pipewire /etc &&
 echo copied pipewire config to etc directory &&
 
+# Create pipewire.conf.d directory
+sudo mkdir /etc/pipewire/pipewire.conf.d
+
 # Create custom pipewire configuration file in pipewire.conf.d directory
 sudo tee /etc/pipewire/pipewire.conf.d/pipewire_modifications.conf > /dev/null << EOF
 
